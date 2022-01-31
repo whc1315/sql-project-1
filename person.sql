@@ -13,17 +13,29 @@ VALUES ('Bob', 25, 180, 'orange'),
 ('Maddy', 25, 165, 'pink'),
 ('Shap', 45, 200, 'purple');
 
--- SELECT * FROM person ORDER BY height_in_cm DESC
+SELECT * FROM person ORDER BY height_in_cm DESC
 
--- SELECT * FROM person ORDER BY height_in_cm ASC
+SELECT * FROM person ORDER BY height_in_cm ASC
 
 SELECT * FROM person ORDER BY age DESC
 
-SELECT * FROM person WHERE age > 20
+SELECT * FROM person WHERE age > 20;
 
-SELECT * FROM person WHERE age = 18
+SELECT * FROM person WHERE age = 18;
 
-SELECT * FROM person WHERE age < 20 AND age > 30
+SELECT * FROM person WHERE age < 20 OR age > 30;
+
+SELECT * FROM person WHERE age != 27;
+
+SELECT * FROM person WHERE favorite_color != 'red';
+
+SELECT * FROM person WHERE favorite_color != 'red'  favorite_color != 'blue';
+
+SELECT * FROM person WHERE favorite_color = 'orange' OR favorite_color = 'green';
+
+SELECT * FROM person WHERE favorite_color IN ('orange', 'green', 'blue');
+
+SELECT * FROM person WHERE favorite_color IN ('yellow', 'purple');
 
 
 
