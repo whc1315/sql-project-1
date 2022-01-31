@@ -7,6 +7,7 @@ SELECT * FROM artist WHERE artist_id <= 10 ORDER BY name DESC;
 
 SELECT * FROM artist WHERE artist_id <= 70 AND artist_id >= 66 ORDER BY name ASC;
 
-SELECT * FROM artist WHERE name = 'Black%'
+SELECT * FROM artist WHERE name LIKE 'Black%';
 
-SELECT
+SELECT * FROM artist WHERE name LIKE 'Black%';
+
